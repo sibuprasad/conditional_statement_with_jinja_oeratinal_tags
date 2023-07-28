@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITIONAL_STATEMENT</title>
+</head>
+<body>
+<!--{% if a > b %}          (simple if else condition)
+        <center>
+            <h1> a is max</h1>
+        </center>
+    {% endif %}
+    -->
+
+<!--{% if a > b and a > c %}        (if-elif-else)
+        <center>
+            <h1>a is max {{a}}</h1>
+        </center>
+    {% elif b > c %}
+        <center>
+            <h1>b is max {{b}}</h1>
+        </center>
+    {% else %}
+        <center>
+            <h1>c is max {{c}}</h1>
+        </center>
+    {% endif %} -->
+
+    {% if a > b %}
+        {% if a > c %}
+        <center><h1>a is max {{a}}</h1></center>
+        {% else %}
+        <center><h1>c is max {{c}}</h1></center>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+        <center><h1>b is max {{b}}</h1></center>
+        {% else %}
+        <center><h1>c is max {{c}}</h1></center>
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>
