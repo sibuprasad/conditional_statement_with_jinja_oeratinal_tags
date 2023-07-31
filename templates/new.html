@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW</title>
+</head>
+<body>
+    <center>
+        <center>
+        <h1>Retrive only the keys from dict</h1>
+        {% for i in new_d.keys %}
+            <h1>{{i}}</h1>
+        {% endfor %}
+    </center>
+    </center>
+    <center>
+        <h1><a href="{% url 'condition' %}">Click here to navigate to condition html page</a></h1>
+    </center>
+</body>
+</html>
+
+<!--
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+-->

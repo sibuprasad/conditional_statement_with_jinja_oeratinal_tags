@@ -27,7 +27,7 @@
         </center>
     {% endif %} -->
 
-    {% if a > b %}
+    <!--{% if a > b %}
         {% if a > c %}
         <center><h1>a is max {{a}}</h1></center>
         {% else %}
@@ -39,7 +39,17 @@
         {% else %}
         <center><h1>c is max {{c}}</h1></center>
         {% endif %}
-    {% endif %}
+    {% endif %} -->
+    <center>
+        <h1>Fevorite sports of {{name}} is</h1>
+    </center>
+    {% for i in hobbies %}
+        <center><h1>{{i}}</h1></center>
+    {% endfor %}
+
+    <center>
+        <h1><a href="{% url 'new' %}">Click here to navigate to new html page</a></h1>
+    </center>
 
 </body>
 </html>

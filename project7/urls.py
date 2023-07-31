@@ -21,4 +21,5 @@ from app1.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('condition/',condition,name='condition'),
+    path('new/',new,name='new'),
 ]
